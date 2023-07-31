@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("/images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.container {
+  background-color: #ffffff;
+  font-size: 16px;
+  padding: 3em 2.8em;
+  width: 90vw;
+  max-width: 65em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 0.6em;
+  margin-bottom: 10%;
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+.search-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1.2em;
+}
+
+.search-container input {
+  font-size: 1em;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #202030;
+}
+
+.search-container button {
+  font-size: 1em;
+  background-color: #262325;
+  border: none;
+  font-weight: 600;
+  border-radius: 0.3em;
+  color: #d7d2d0;
+}
+
+img {
+  display: block;
+  width: 36%;
+  margin: 1.8em auto 0 auto;
+}
+
+.details {
+  background-color: #262325;
+  position: relative;
+  margin: -4.3em 0 0 0;
+  width: 76%;
+  left: 11%;
+  text-align: center;
+  padding: 0.6em 0;
+  border-radius: 2.6em;
+
+
+}
+
+.details h2 {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #d7d2d0;
+}
+
+.details h4 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #d7d2d0;
+}
+
+#show-recipe {
+  font-size: 1em;
+  position: relative;
+  left: 43%;
+  padding: 0.9em 0.6em;
+  background-color: #262325;
+  border: none;
+  top: 1.5em;
+  border-radius: 0.3em;
+  font-weight: 600;
+  color: #d7d2d0;
+
+}
+
+#recipe {
+  background-color: #ffffff;
+  margin-top: 1em;
+  padding: 1.5em;
+  border-radius: 0.4em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.74);
+  display: none;
+}
+
+#recipe h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #202030;
+}
+
+#recipe pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 0.92em;
+  color: #303040;
+}
+
+#hide-recipe {
+  font-size: 1em;
+  position: absolute;
+  width: 1.8em;
+  height: 1.8em;
+  background-color: #262325;
+  border: none;
+  top: 1em;
+  right: 1em;
+  border-radius: 50%;
+  font-weight: bold;
+  color: #d7d2d0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#hide-recipe:hover {
+  background-color: rgb(204 58 127);
+  color: #fff;
+}
+
+ul {
+  font-size: 1em;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.8em 1.1em;
+  padding: 1.2em 0 0 1.2em;
+  color: #303040;
+  text-transform: capitalize;
+  list-style-type: none;
+}
+
+ul li:before {
+  content: attr(data-number) ". ";
+  font-weight: bold;
+  color: rgb(204 58 127);
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    font-size: 14px;
+  }
+}
