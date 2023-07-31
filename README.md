@@ -1,7 +1,7 @@
 # Recipe Search Web Application
 This is a simple web application that allows users to search for recipes by entering the name of a dish. The application fetches recipe data from the TheMealDB API and displays the recipe details along with the ingredients and cooking instructions.
 
-- <b>Website link : </b>[Click here✨](https://github.com/BlaZe-001)
+- <b>Website link : </b>[Click here✨](https://blaze-001.github.io/Recipe-Search-Web-Application/)
 ### Technologies Used
 * HTML
 * CSS
